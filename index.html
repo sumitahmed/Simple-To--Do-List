@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern To-Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        
+        <div class="input-section">
+            <div class="main-input-container">
+                <input type="text" id="todo-input" placeholder="Add a new task..." />
+            </div>
+            
+            <div class="datetime-container">
+                <div class="date-time-group">
+                    <label class="input-label">Due Date & Time (Optional)</label>
+                    <div class="datetime-picker">
+                        <select id="due-date-select" class="date-select">
+                            <option value="">Select Date</option>
+                            <option value="today">Today</option>
+                            <option value="tomorrow">Tomorrow</option>
+                            <option value="this-week">This Week</option>
+                            <option value="next-week">Next Week</option>
+                            <option value="custom">Custom Date</option>
+                        </select>
+                        <input type="date" id="due-date-input" class="hidden" />
+                        
+                        <select id="due-time-select" class="time-select">
+                            <option value="">Select Time</option>
+                            <option value="09:00">9:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="21:00">9:00 PM</option>
+                            <option value="custom">Custom Time</option>
+                        </select>
+                        <input type="time" id="due-time-input" class="hidden" />
+                    </div>
+                </div>
+            </div>
+            
+            <button id="add-task-btn">Add Task</button>
+        </div>
+        
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
