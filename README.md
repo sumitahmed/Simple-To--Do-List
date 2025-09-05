@@ -1,5 +1,4 @@
-git push -u origin main --force
-text
+https://sumitahmed.github.io/Simple-To--Do-List/
 # 📋 Advanced Todo List with Smart Features
 
 A modern, feature-rich todo list application with automatic task management, smart alerts, and a beautiful layered card aesthetic. Built with vanilla HTML, CSS, and JavaScript - perfect for learning web development fundamentals!
